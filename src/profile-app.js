@@ -115,7 +115,6 @@ class ProfileApp extends PolymerElement {
             </button>
           </div>
         </div>
-
           <!-- Profile -->
           <div class="row container-bg clear-float">
             <div class="col-md-2 col-sm-12 float-left">
@@ -142,7 +141,6 @@ class ProfileApp extends PolymerElement {
               </div>
             </div>
           </div>
-
           <!-- About Profile -->
           <div class="row container-bg">
             <div class="col-md-12">
@@ -150,7 +148,6 @@ class ProfileApp extends PolymerElement {
               <p>{{user.aboutme}}</p>
             </div>
           </div>
-
           <!-- Professional Skills -->
           <div class="row container-bg clear-float">
             <p class="profile-title">Professional Skills</p>   
@@ -165,7 +162,6 @@ class ProfileApp extends PolymerElement {
               </div>
             </template>
           </div>
-
           <!-- Work Experience -->
           <div class="row container-bg">
             <div class="col-md-12">
@@ -173,7 +169,6 @@ class ProfileApp extends PolymerElement {
               <p>{{user.workexperience}}</p>
             </div>
           </div>
-
           <!-- Education -->
           <div class="row container-bg">
             <div class="col-md-12">

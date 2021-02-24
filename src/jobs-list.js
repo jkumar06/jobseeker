@@ -92,7 +92,7 @@ class JobsList extends PolymerElement {
           }
         ]
       },
-      filtered:{
+      filtered: {
         type : Array,
         value : [
           {
@@ -180,13 +180,9 @@ class JobsList extends PolymerElement {
       searchInput: {
         type: String,
         value: ''
-    },
-      item: {
-      
-      }
-    
+      },
+      item: {}
     }
-
   }
   static get template() {
     return html `
@@ -212,20 +208,19 @@ class JobsList extends PolymerElement {
         .pointing-cursor{
           cursor: pointer;
         }
-        .iron-input {
-          width: 50px;
+        .search-btn{
+          width: 50%;
+          display: block;
+          margin: auto;
         }
       </style>
-      <div>
-      <div id="search" show$="{{show}}" on-click="toggleSearch">
-           
-           <iron-input bind-value="{{searchInput}}" on-keydown="onKeyPress">
-            <input placeholder="Search">
-           </iron-input>
-        </div>
-    
       <!-- Professional Skills -->
       <div class="row cards-container clear-float">   
+        <div id="search" show$="{{show}}" on-click="toggleSearch">
+          <iron-input bind-value="{{searchInput}}" on-keydown="onKeyPress" class="search-btn">
+            <input placeholder="Search">
+          </iron-input>
+        </div>
         <template is="dom-repeat" items="{{filtered}}" id="jobs" > 
           <div class="item">
             <div class="col-md-6 col-sm-12 pointing-cursor float-left" on-click="selectedJob">
@@ -246,9 +241,7 @@ class JobsList extends PolymerElement {
                 </div>
               </div>
             </div>
-            
             </div>
-           
           </div>
         </template>
       </div>
@@ -256,33 +249,26 @@ class JobsList extends PolymerElement {
    }
 
    toggleSearch(){
-    console.log('show something');
-    
-    }
-    
-    onKeyPress() {
-      console.log('key pressed. '+this.searchInput)
-      var searchFilter = this.searchInput.toLowerCase();
-      console.log("searching with. "+searchFilter)
-      var res = []
-      res=this.jobs.filter(j => 
-        j.jobProfile.toLowerCase().includes(searchFilter)
-       || j.company.toLowerCase().includes(searchFilter)
-       || j.experience.toLowerCase().includes(searchFilter)
-       || j.location.toLowerCase().includes(searchFilter)
-       || j.technologies.toLowerCase().includes(searchFilter)
-       || j.salary.toLowerCase().includes(searchFilter)
-       || j.posted.toLowerCase().includes(searchFilter))
-      console.log("filtered : "+res)
-      this.filtered = res
+      console.log('show something');
     }
 
+   onKeyPress() {
+    var searchFilter = this.searchInput.toLowerCase();
+    var res = []
+    res=this.jobs.filter(j => 
+      j.jobProfile.toLowerCase().includes(searchFilter)
+     || j.company.toLowerCase().includes(searchFilter)
+     || j.experience.toLowerCase().includes(searchFilter)
+     || j.location.toLowerCase().includes(searchFilter)
+     || j.technologies.toLowerCase().includes(searchFilter)
+     || j.salary.toLowerCase().includes(searchFilter)
+     || j.posted.toLowerCase().includes(searchFilter))
+    this.filtered = res
+  }
 
-   selectedJob() {
-    console.log("item"+item);
-    
+   selectedJob(e) {
       var item = e.model.__data.item;
-      
+      console.log(item.jobId);
       window.localStorage.setItem('jobsList',JSON.stringify(this.jobs));
       window.location.href = "/jobs-description";
    }

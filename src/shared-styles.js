@@ -201,6 +201,7 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
       width: 95%;
       border: 1px solid #ccc;
       outline: none;
+      background-position: right center;
     }
     .btn {
       width: 200px;

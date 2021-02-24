@@ -256,7 +256,7 @@ class JobsList extends PolymerElement {
    }
 
    toggleSearch(){
-    console.log('show sometihing');
+    console.log('show something');
     
     }
     
@@ -277,15 +277,14 @@ class JobsList extends PolymerElement {
       this.filtered = res
     }
 
-  
 
    selectedJob() {
     console.log("item"+item);
     
-      //var item = e.model.__data.item;
+      var item = e.model.__data.item;
       
-      //window.localStorage.setItem('jobsList',JSON.stringify(this.jobs));
-      //window.location.href = "/jobs-description";
+      window.localStorage.setItem('jobsList',JSON.stringify(this.jobs));
+      window.location.href = "/jobs-description";
    }
 }
 

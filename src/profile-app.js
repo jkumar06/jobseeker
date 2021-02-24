@@ -136,7 +136,7 @@ class ProfileApp extends PolymerElement {
                 <div class="col-md-4 col-sm-12 float-left">
                   <div class="container">
                     <p class="profile-title upload-title">Upload your resume</p>
-                    <input #Image type="file" on-click="uploadFile($event.target.files)"/>
+                    <input #Image type="file" on-change="uploadFile"/>
                   </div>
                 </div>
               </div>
@@ -209,10 +209,16 @@ class ProfileApp extends PolymerElement {
     `;
     }
 
-    uploadFile(file){
-      var args = file.item[0];
-      console.log(args);
+    // uploadFile(file){
+    //   var args = file.item[0];
+    //   console.log(args);
 
+    // }
+    uploadFile(event){
+      const file = event.target.files
+      const filename = file.length ? file[0].name : ''
+      if(filename)
+        alert(`Your Resume Successfully Updated (${filename})`)
     }
 
     editDetails(){

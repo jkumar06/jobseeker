@@ -11,8 +11,7 @@ class EditProfile extends PolymerElement {
         type: Object,
         value: function () {
           // Get array data from Local Storage
-          var profile = JSON.parse(
-            window.localStorage.getItem("profileDetails")
+          var profile = JSON.parse(window.localStorage.getItem("profileDetails")
           );
           return {
             profile,

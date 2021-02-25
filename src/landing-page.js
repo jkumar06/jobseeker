@@ -48,7 +48,7 @@ class LandingPage extends PolymerElement {
               <app-toolbar><div class="logo"><img src="images/logo.jpg" width="200" alt="Job Seeker" loading="lazy"></div>
               </app-toolbar>
 
-              <!-- Iron Selecctor Start -->
+              <!-- Iron Selector Start -->
               <iron-selector selected="[[page]]" attr-for-selected="name" class="drawer-list" role="navigation" role="Navigation" tabindex="0">
                 <a name="profile" role="Profile" href="[[rootPath]]profile"> Profile</a>
                 <a name="jobs-list" role="Jobs List" href="[[rootPath]]jobs-list"> Jobs List</a>

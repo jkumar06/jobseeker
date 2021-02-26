@@ -37,7 +37,7 @@ body, html {
     width: 86%;
     border-radius: 10px;
     border: 0px;
-    background: #a35555;
+    background: #C0D9DD;
     color: #555;
     padding: 15px;
     margin: 10px 0px;
@@ -57,7 +57,7 @@ body, html {
     float: left;
 }
 .login-area .btn:hover {
-        background: #e1c6a3;
+        background: #55A3A3;
         color: #fff;
 
 }
@@ -109,7 +109,7 @@ body, html {
     font-size: 25px;
 }
 .clr1{
-    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%) !important
+    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%) !important
 }
 .clr2{
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) !important;
@@ -119,6 +119,7 @@ body, html {
 }
 .clr4{
     background-image: linear-gradient(to right, #434343 0%, black 100%) !important;
+    
 }
 .sidebar-menu{
     background-color: #673AB7;

@@ -299,6 +299,7 @@ class JobsList extends PolymerElement {
     }
   }
   static get template() {
+    // Provide a DOM template for the element
     return html `
     <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
     <script src="/node_modules/material-design-lite/material.min.js"></script>
@@ -368,6 +369,7 @@ class JobsList extends PolymerElement {
     }
 
    onKeyPress() {
+     //functionality to search job list
     var searchFilter = this.searchInput.toLowerCase();
     var res = []
     res=this.jobs.filter(j => 
@@ -383,6 +385,7 @@ class JobsList extends PolymerElement {
 
    selectedJob(e) {
       var item = e.model.__data.item;
+       //store data into local storage
       window.localStorage.setItem('selectedJob',JSON.stringify(item));
       window.location.href = "/jobs-description";
    }

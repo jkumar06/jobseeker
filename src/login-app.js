@@ -6,6 +6,7 @@ import './style-element.js';
 class LoginApp extends PolymerElement {
 
 static get template() {
+    // Provide a DOM template for the element
     return html `
       <style include="style-element">    
       </style>
@@ -36,6 +37,7 @@ static get template() {
         var user = this.$.username.value;
         var pass = this.$.password.value;
 
+        // if entered credentials correct then redirect to profile page
         if (user == "admin" && pass == "admin") {
             window.location.href = "/profile";
             return user;

@@ -97,6 +97,7 @@ class ProfileApp extends PolymerElement {
  }
 
     static get template() {
+      // Provide a DOM template for the element
       return html `
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
                 integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
@@ -204,12 +205,9 @@ class ProfileApp extends PolymerElement {
     `;
     }
 
-    // uploadFile(file){
-    //   var args = file.item[0];
-    //   console.log(args);
 
-    // }
     uploadFile(event){
+      //uploading resume functionality
       const file = event.target.files
       const filename = file.length ? file[0].name : ''
       if(filename)
@@ -217,6 +215,7 @@ class ProfileApp extends PolymerElement {
     }
 
     editDetails(){
+      //store data into local storage
       window.localStorage.setItem('profileDetails',JSON.stringify(this.user));
       window.localStorage.setItem('professionalskills',JSON.stringify(this.user.professionalskills));
       window.location.href = "/edit-profile";

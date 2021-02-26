@@ -21,6 +21,7 @@ class EditProfile extends PolymerElement {
       professionalskills: {
         type: Array,
         value: function () {
+          // Get array data from Local Storage
           return JSON.parse(window.localStorage.getItem("professionalskills"));
         },
       },
@@ -28,6 +29,7 @@ class EditProfile extends PolymerElement {
   }
 
   static get template() {
+    // Provide a DOM template for the element
     return html`
     <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
     <script src="/node_modules/material-design-lite/material.min.js"></script>

@@ -11,6 +11,7 @@ class JobDescritpion extends PolymerElement {
       selectedJob: {
         type: Object,
         value: function(){
+          // fetch data from localstorage 
           return JSON.parse(window.localStorage.getItem("selectedJob"));
         }
       }
@@ -18,6 +19,7 @@ class JobDescritpion extends PolymerElement {
   }
 
   static get template() {
+    // Provide a DOM template for the element
     return html `
     <link rel="stylesheet" href="/node_modules/material-design-lite/material.min.css">
     <script src="/node_modules/material-design-lite/material.min.js"></script>
@@ -100,5 +102,5 @@ class JobDescritpion extends PolymerElement {
   }
 }
 
-
+// Register the JobDescritpion element with the browser
 window.customElements.define('job-description', JobDescritpion);

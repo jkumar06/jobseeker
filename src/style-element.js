@@ -122,7 +122,7 @@ body, html {
     
 }
 .sidebar-menu{
-    background-color: #673AB7;
+    background-color: #40E0D0;
     padding: 0px !important;
 }
 app-header{

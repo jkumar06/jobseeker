@@ -23,7 +23,7 @@ class ProfileApp extends PolymerElement {
           var profile = JSON.parse(window.localStorage.getItem("editProfile"));
           if (profile == null || undefined) {
             var obj = {
-              "name": "Ravi",
+              "name": "Jagadeesh kumar",
               "location": "Hyderabad / Secundrabad",
               "experience": {
                   "years" : 4,
@@ -33,9 +33,9 @@ class ProfileApp extends PolymerElement {
                   "lakhs":5,
                   "thousand":50
               },
-              "mobile":9177267370,
-              "mail":"ravi06@gmail.com",
-              "aboutme": "Hello! I’m Joyce Harrison. I am passionate about UI/UX design and Web Design. I am a skilled Front-end Developer and master of Graphic Design tools such as Photoshop and Sketch.",
+              "mobile":918639076279,
+              "mail":"kjagadeeshkumar06@gmail.com",
+              "aboutme": "Hello! I’m Jagadeesh kumar. I am passionate about UI/UX design and Web Design. I am a skilled Front-end Developer and master of Graphic Design tools such as Photoshop and Sketch.",
               "professionalskills":[
                 {
                   "lang":"HTML",
@@ -62,7 +62,7 @@ class ProfileApp extends PolymerElement {
                   "rating":90
                 }
               ],
-              "workexperience":"Hello! I’m Joyce Harrison. I am passionate about UI/UX design and Web Design. I am a skilled Front-end Developer and master of Graphic Design tools such as Photoshop and Sketch.",
+              "workexperience":"Hello! I’m Jagadeesh kumar. I am passionate about UI/UX design and Web Design. I am a skilled Front-end Developer and master of Graphic Design tools such as Photoshop and Sketch.",
               "education":[
                   {
                       "education":10,
@@ -97,7 +97,7 @@ class ProfileApp extends PolymerElement {
  }
 
     static get template() {
-      // Provide a DOM template for the element
+      
       return html `
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
                 integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 

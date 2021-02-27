@@ -37,7 +37,7 @@ class LandingPage extends PolymerElement {
 
       <!--- Approute component start -->
       <app-route route="{{route}}" pattern="[[rootPath]]:page" data="{{routeData}}" tail="{{subroute}}"></app-route>
-      <!--- Applocation component end -->
+      <!--- Approute component end -->
 
       <!--- Appdrawer Layout component start -->
       <app-drawer-layout fullbleed="" narrow="{{narrow}}">
@@ -106,7 +106,7 @@ class LandingPage extends PolymerElement {
     }
 
     static get observers() {
-        // To the routing data changes if we send the page nage based on that we need to navigate appropiate page
+        // To the routing data changes if we send the page based on that we need to navigate appropiate page
         // Complex observers can monitor one or more properties.
         return [
             '_routePageChanged(routeData.page)' //_routePageChanged to check the route data changes

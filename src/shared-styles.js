@@ -51,7 +51,7 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
   }
     
     .drawer-list a.iron-selected {
-      background: #8d5ce4;
+      background: #7fb1ba;
   }
   .drawer-list a {
     color: #fff;
@@ -61,7 +61,7 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
     font-weight: normal !important;
   }
     .drawer-list a:hover {
-      background: #8d5ce4;
+      background: #7fb1ba;
   }
   footer.card {
     margin: 0px 34px 0px;

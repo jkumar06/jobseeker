@@ -46,7 +46,7 @@ class ProfileApp extends PolymerElement {
                   "rating":80
                 },
                 {
-                  "lang":"JavaScript",
+                  "lang":"JAVASCRIPT",
                   "rating":86
                 },
                 {

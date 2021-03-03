@@ -357,10 +357,7 @@ class JobsList extends PolymerElement {
           </div>
         </template>
       </div>
-      <paper-button id="d-button" on-click="document.querySelector('#dialog').toggle()">Hello</paper-button>
-      <paper-dialog id="dialog">
-        <p>Hello</p>
-      </paper-dialog>
+      
     `;
    }
 
@@ -370,8 +367,8 @@ class JobsList extends PolymerElement {
 
    onKeyPress() {
      //functionality to search job list
-    var searchFilter = this.searchInput.toLowerCase();
-    var res = []
+    let searchFilter = this.searchInput.toLowerCase();
+    let res = []
     res=this.jobs.filter(j => 
       j.jobProfile.toLowerCase().includes(searchFilter)
      || j.company.toLowerCase().includes(searchFilter)
@@ -384,12 +381,11 @@ class JobsList extends PolymerElement {
   }
 
    selectedJob(e) {
-      var item = e.model.__data.item;
+      let item = e.model.__data.item;
        //store data into local storage
       window.localStorage.setItem('selectedJob',JSON.stringify(item));
       window.location.href = "/jobs-description";
    }
 }
-
 
 window.customElements.define('jobs-list', JobsList);

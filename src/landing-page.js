@@ -10,7 +10,7 @@ import '@polymer/app-route/app-location.js';
 import '@polymer/app-route/app-route.js';
 import '@polymer/iron-pages/iron-pages.js';
 import '@polymer/iron-selector/iron-selector.js';
-import '@polymer/iron-icon/iron-icon.js';
+//import '@polymer/iron-icon/iron-icon.js';
 import '@polymer/paper-icon-button/paper-icon-button.js';
 import './shared-styles.js';
 import './my-icons.js';
@@ -97,7 +97,7 @@ class LandingPage extends PolymerElement {
                  //Set to true to cause the corresponding attribute to be set on the host node when the property value changes.
                 reflectToAttribute: true,
                 // Simple observers are declared in the properties object, and always observe a single property.
-                //If page has changed import the appropiate page
+                //If page has changed import the appropriate page
                 observer: '_pageChanged' 
             },
             routeData: Object,
@@ -106,7 +106,7 @@ class LandingPage extends PolymerElement {
     }
 
     static get observers() {
-        // To the routing data changes if we send the page based on that we need to navigate appropiate page
+        // To the routing data changes if we send the page based on that we need to navigate appropriate page
         // Complex observers can monitor one or more properties.
         return [
             '_routePageChanged(routeData.page)' //_routePageChanged to check the route data changes

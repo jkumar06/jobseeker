@@ -39,7 +39,7 @@ $_documentContainer.innerHTML = `<dom-module id="shared-styles">
     app-drawer {
         --app-drawer-scrim-background: rgba(0, 0, 100, 0.8);
         --app-drawer-content-container: {
-          background-color: #673AB7;
+          background-color: #3a72b7;
         }
         
       }

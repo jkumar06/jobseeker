@@ -109,7 +109,7 @@ body, html {
     font-size: 25px;
 }
 .clr1{
-    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%) !important
+    background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%) !important;
 }
 .clr2{
     background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%) !important;

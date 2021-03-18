@@ -25,7 +25,7 @@ class LandingPage extends PolymerElement {
         return html `
       <style include="shared-styles">
         :host {
-          --app-primary-color: #673AB7;
+          --app-primary-color: #3a72b7;
           --app-secondary-color: black;
           display: block;
         }
@@ -137,7 +137,7 @@ class LandingPage extends PolymerElement {
 
     _pageChanged(page) {
         // Import the page component on demand.
-        // Note: `polymer build` doesn't like string concatenation in the import
+        // Handle Changes
         // statement, so break it up.
         switch (page) {
 

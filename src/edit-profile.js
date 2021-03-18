@@ -226,7 +226,7 @@ class EditProfile extends PolymerElement {
   }
 
   updateProfile(){
-    var profile =  {
+    let profile =  {
       "name": this.$.name.value,
       "location": this.$.location.value,
       "experience": {
@@ -244,7 +244,7 @@ class EditProfile extends PolymerElement {
     }
 
     //Education functionality
-     var educations = [];
+     let educations = [];
      for(var i=0;i<=2;i++) {
       var education = this.shadowRoot.querySelector('#education-'+i).value;
       var yrofpassing = this.shadowRoot.querySelector('#yrofpassing-'+i).value;

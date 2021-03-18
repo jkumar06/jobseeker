@@ -38,7 +38,7 @@ static get template() {
         var pass = this.$.password.value;
 
         // if entered credentials correct then redirect to profile page
-        if (user == "admin" && pass == "admin") {
+        if (user == "admin" && pass == "password") {
             window.location.href = "/profile";
             return user;
         }

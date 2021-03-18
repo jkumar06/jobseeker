@@ -96,9 +96,11 @@ class JobDescritpion extends PolymerElement {
 
   applyJob() {
     window.alert('your selected job is applied successfully!')
+    console.log("applied");
   }
   saveJob() {
     window.alert('your selected job is saved successfully!')
+    console.log("saved");
   }
 }
 
